@@ -1,4 +1,4 @@
-package com.sqli;
+package com.sqli.machine;
 
 public class Machine {
     // create a new machine takes 4 parameters : name, operating system, disk size, memory.

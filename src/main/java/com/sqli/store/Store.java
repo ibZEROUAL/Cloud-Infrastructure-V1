@@ -1,4 +1,4 @@
-package com.sqli;
+package com.sqli.store;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,13 +12,9 @@ public class Store {
 
     private long numberOfDocuments;
 
-    private Store(String storeName) {
+    Store(String storeName) {
         this.storeName = storeName;
         this.documents = new ArrayList<>();
-    }
-
-    public static Store createStoreFromFactory(String storeName) {
-        return new Store(storeName);
     }
 
     public String getStoreName() {
@@ -27,7 +23,7 @@ public class Store {
 
     public void deleteDocuments() {
         this.numberOfDocuments = 0;
-        this.documents = new ArrayList<>();
+        this.documents.clear();
     }
 
     public List<String> getDocuments() {

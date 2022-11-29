@@ -1,4 +1,4 @@
-package com.sqli;
+package com.sqli.machine;
 
 public class MachineBuilder {
     private String machineName;
